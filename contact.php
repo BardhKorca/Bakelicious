@@ -73,6 +73,19 @@
               <label for="">Phone</label>
               <span>Phone</span>
             </div>
+            <div class="input-container">
+              <label for="City">Choose a city:</label>
+              <select name="city" id="city" class = "input" >
+              <option value="Prishtin">Prishtin</option>
+              <option value="Gjilan">Gjilan</option>
+              <option value="Ferizaj">Ferizaj</option>
+              </select>
+              <span>City</span>
+            </div>
+            <div class="input-container">
+            <input type="checkbox" id="terms" name="Terms" value="Terms" class = "input">
+            <label for="terms"> Agree to terms </label><br>
+            </div>
             <div class="input-container textarea">
               <textarea name="message" class="input"></textarea>
               <label for="">Message</label>
