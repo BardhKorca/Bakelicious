@@ -1,3 +1,6 @@
+<?php
+      include_once 'includes/dbh.inc.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form</title>
     <link rel="stylesheet" href="contact.css" />
-  </head>
+  </head> 
   <body>
     <div class="container">
       <span class="big-circle"></span>
-      <img src="img/shape.png" class="square" alt="" />
+      <img src="dist/images/shape.png" class="square" alt="" />
       <div class="form">
         <div class="contact-info">
           <h3 class="title">Let's get in touch</h3>
@@ -20,15 +23,15 @@
 
           <div class="info">
             <div class="information">
-              <img src="img/location.png" class="icon" alt="" />
+              <img src="dist/images/location.png" class="icon" alt="" />
               <p>Prishtina</p>
             </div>
             <div class="information">
-              <img src="img/email.png" class="icon" alt="" />
+              <img src="dist/images/email.png" class="icon" alt="" />
               <p>lorem@ipsum.com</p>
             </div>
             <div class="information">
-              <img src="img/phone.png" class="icon" alt="" />
+              <img src="dist/images/phone.png" class="icon" alt="" />
               <p>123-456-789</p>
             </div>
           </div>
@@ -37,16 +40,16 @@
             <p>Connect with us :</p>
             <div class="social-icons">
               <a href="https://www.facebook.com" target ="_blank">
-                <i class="fab fa-facebook-f" ><img src="img/fb.png"></i>
+                <i class="fab fa-facebook-f" ><img src="dist/images/fb.png"></i>
               </a>
               <a href="https://www.twitter.com" target ="_blank">
-                <i class="fab fa-twitter"><img src="img/tw.png"></i>
+                <i class="fab fa-twitter"><img src="dist/images/tw.png"></i>
               </a>
               <a href="https://www.instagram.com" target ="_blank">
-                <i class="fab fa-instagram"><img src="img/insta.png"></i>
+                <i class="fab fa-instagram"><img src="dist/images/insta.png"></i>
               </a>
               <a href="https://www.linkedin.com" target ="_blank">
-                <i class="fab fa-linkedin-in"  ><img src="img/in.png"></i>
+                <i class="fab fa-linkedin-in"  ><img src="dist/images/in.png"></i>
               </a>
             </div>
           </div>
@@ -76,8 +79,8 @@
             <div class="input-container">
               <label for="City">Choose a city:</label>
               <select name="city" id="city" class = "input" >
-              <option value="Prishtin">Prishtin</option>
-              <option value="Gjilan">Gjilan</option>
+              <option value="Prishtin">Gjilan</option>
+              <option value="Gjilan">Prishtin</option>
               <option value="Ferizaj">Ferizaj</option>
               </select>
               <span>City</span>
@@ -98,5 +101,12 @@
     </div>
 
     <script src="app.js"></script>
+    <?php
+    
+    $sql = "SELECT * FROM contact;";
+    $result = mysqli_query($conn, $sql);
+    $resultCheck = mysqli_num_rows($result);
+
+    ?>
   </body>
 </html>
