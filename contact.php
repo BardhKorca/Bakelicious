@@ -1,18 +1,20 @@
-<?php
+<?php/*
       include_once 'includes/dbh.inc.php';
-?>
+*/?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form</title>
-    <link rel="stylesheet" href="contact.css" />
-  </head> 
+    <link rel="stylesheet" href="contact.css"/>
+
+  </head>
+   
   <body>
     <div class="container">
       <span class="big-circle"></span>
-      <img src="dist/images/shape.png" class="square" alt="" />
+      <img src=" dist/images/shape.png" class="square" alt="" />
       <div class="form">
         <div class="contact-info">
           <h3 class="title">Let's get in touch</h3>
@@ -23,15 +25,15 @@
 
           <div class="info">
             <div class="information">
-              <img src="dist/images/location.png" class="icon" alt="" />
+              <img src=" dist/images/location.png" class="icon" alt="" />
               <p>Prishtina</p>
             </div>
             <div class="information">
-              <img src="dist/images/email.png" class="icon" alt="" />
+              <img src=" dist/images/email.png" class="icon" alt="" />
               <p>lorem@ipsum.com</p>
             </div>
             <div class="information">
-              <img src="dist/images/phone.png" class="icon" alt="" />
+              <img src=" dist/images/phone.png" class="icon" alt="" />
               <p>123-456-789</p>
             </div>
           </div>
@@ -40,16 +42,16 @@
             <p>Connect with us :</p>
             <div class="social-icons">
               <a href="https://www.facebook.com" target ="_blank">
-                <i class="fab fa-facebook-f" ><img src="dist/images/fb.png"></i>
+                <i class="fab fa-facebook-f" ><img src=" dist/images/fb.png"></i>
               </a>
               <a href="https://www.twitter.com" target ="_blank">
-                <i class="fab fa-twitter"><img src="dist/images/tw.png"></i>
+                <i class="fab fa-twitter"><img src=" dist/images/tw.png"></i>
               </a>
               <a href="https://www.instagram.com" target ="_blank">
-                <i class="fab fa-instagram"><img src="dist/images/insta.png"></i>
+                <i class="fab fa-instagram"><img src=" dist/images/insta.png"></i>
               </a>
               <a href="https://www.linkedin.com" target ="_blank">
-                <i class="fab fa-linkedin-in"  ><img src="dist/images/in.png"></i>
+                <i class="fab fa-linkedin-in"  ><img src=" dist/images/in.png"></i>
               </a>
             </div>
           </div>
@@ -91,7 +93,7 @@
             </div>
             <div class="input-container textarea">
               <textarea name="message" class="input"></textarea>
-              <label for="">Message</label>
+              <label for="message"></label>
               <span>Message</span>
             </div>
             <input type="submit" value="Send" class="btn" />
@@ -100,13 +102,13 @@
       </div>
     </div>
 
-    <script src="app.js"></script>
-    <?php
+    <script src="dist/js/app.js"></script>
+   <?php/*
     
-    $sql = "SELECT * FROM contact;";
-    $result = mysqli_query($conn, $sql);
+    $sql = "SELECT * FROM demo;";
+    $result = mysqli_query($conn, $sqli);
     $resultCheck = mysqli_num_rows($result);
-
+*/
     ?>
   </body>
 </html>

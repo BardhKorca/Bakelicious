@@ -3,10 +3,10 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
-    <link rel="stylesheet" type="text/css" href="dist/css/login.css" />
+    <link rel="stylesheet" type="text/css" href="login.css"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway:wght@500&display=swap"
-      rel="stylesheet"
+      rel="stylesheet" 
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
@@ -19,7 +19,6 @@
       crossorigin="anonymous"
     />
 
-    <script src="script.js"></script>
   </head>
 
   <body>
