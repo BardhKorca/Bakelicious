@@ -28,6 +28,7 @@
 						<li class="is--active"><a href="index.php">Home</a></li>
 						<li><a href="#Recipes">Recipes</a></li>
 						<li><a href="contact.php">contact us</a></li>
+						<li><a href="Messages.php">Messages</a></li>
 						<li><a href="about.php">About Us</a></li>
 						<li><a href="videos.php">Tutorials</a></li>
 					</ul>
